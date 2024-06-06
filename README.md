@@ -6,6 +6,7 @@
 
 ```bash
 echo "# Laravel To-Do App
+```
 
 A simple to-do list application built with Laravel, designed to be used without authentication. The to-do list is stored in the session and will be reset upon closing the browser or after a period of inactivity.
 
@@ -21,11 +22,11 @@ A simple to-do list application built with Laravel, designed to be used without 
 - PHP >= 7.3
 - Composer
 
-## Installation
+## Installation 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/msolehin/todo-app.git
+    git clone https://github.com/msolehin/todo-app.git
    cd laravel-todo-app
    ```
 
