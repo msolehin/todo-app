@@ -15,13 +15,14 @@ class TodoController extends Controller
 
     public function add(Request $request){
         $request->validate([
-            'todos' => 'required|string|max:255',
+            'todo' => 'required|string|max:255',
         ]);
 
         $todos = Session::get('todos',[]);
         $newTodo = $request->input('todo');
         array_unshift($todos,$newTodo);
         Session::put('todos',$todos);
+        Session::flash('success', 'To-do added successfully!');
 
         return redirect('/');
     }
@@ -29,6 +30,8 @@ class TodoController extends Controller
 
     public function reset(){
         Session::forget('todos');
+        Session::flash('success', 'To-do reset successfully!');
+
 
         return redirect('/');
     }
