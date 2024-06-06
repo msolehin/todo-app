@@ -30,9 +30,9 @@ A simple to-do list application built with Laravel, designed to be used without 
    \`\`\`
 
 2. **Install PHP dependencies**
-   \`\`\`bash
+   ```bash
    composer install
-   \`\`\`
+   ```
 
 3. **Set up environment file**
    Copy the example environment file and create a new one:
