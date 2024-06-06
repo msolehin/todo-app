@@ -24,10 +24,10 @@ A simple to-do list application built with Laravel, designed to be used without 
 ## Installation
 
 1. **Clone the repository**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/msolehin/todo-app.git
    cd laravel-todo-app
-   \`\`\`
+   ```
 
 2. **Install PHP dependencies**
    ```bash
@@ -36,33 +36,33 @@ A simple to-do list application built with Laravel, designed to be used without 
 
 3. **Set up environment file**
    Copy the example environment file and create a new one:
-   \`\`\`bash
+   ```bash
    cp .env.example .env
-   \`\`\`
+   ```
 
 4. **Generate application key**
-   \`\`\`bash
+   ```bash
    php artisan key:generate
-   \`\`\`
+   ```
 
 5. **Configure session settings**
    Ensure the session settings in \`config/session.php\` are set as desired, specifically:
-   \`\`\`php
+   ```php
    'lifetime' => 30,
    'expire_on_close' => true,
-   \`\`\`
+   ```
 
 6. **Run the application**
    Start the Laravel development server:
-   \`\`\`bash
+   ```bash
    php artisan serve
-   \`\`\`
+   ```
 
 7. **Access the application**
    Open your web browser and navigate to:
-   \`\`\`
+   ```
    http://localhost:8000
-   \`\`\`
+   ```
 
 ## Usage
 
@@ -73,13 +73,6 @@ A simple to-do list application built with Laravel, designed to be used without 
 - **Reset the To-Do List:**
   - Click the \"Reset List\" button to clear all items.
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (\`git checkout -b feature/your-feature\`)
-3. Commit your changes (\`git commit -m 'Add some feature'\`)
-4. Push to the branch (\`git push origin feature/your-feature\`)
-5. Open a pull request
 
 ## License
 
